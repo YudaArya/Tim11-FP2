@@ -1,0 +1,47 @@
+:root {
+  --primaryColor: #ffffff;
+  --secondaryColor: #e6e4e4;
+  --formtextColor: #088c18;
+
+  --mainFont: "Open Sans", sans-serif;
+  --headingFont: "Merriweather", serif;
+}
+body {
+  font-family: var(--mainFont);
+}
+.heading {
+  font-family: var(--headingFont);
+  font-size: 24px;
+  font-weight: 700;
+}
+.subheading {
+  font-weight: 300;
+}
+/* Navbar */
+.navbar-brand {
+  font-family: var(--headingFont);
+  font-weight: 900;
+}
+.navbar-brand span {
+  color: var(--formtextColor);
+}
+.nav-link {
+  font-family: var(--headingFont);
+}
+.nav-link.active {
+  font-weight: 700;
+  color: var(--formtextColor) !important;
+}
+.login-home {
+  margin-left: 16px;
+}
+.home {
+  background-color: var(--secondaryColor);
+  padding-top: 90px;
+}
+input.placeholder {
+  color: var(--formtextColor);
+}
+.form {
+  font-family: var(--mainFont);
+}

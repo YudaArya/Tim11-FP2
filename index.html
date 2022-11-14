@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- box icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
+
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Eazy RentCar</title>
+  </head>
+  <body>
+    <!-- navbar starts -->
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+        <div class="container">
+          <a class="navbar-brand" href="#"><span>E</span>azy RentCar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end align-items-center" id="navbarNav">
+            <ul class="navbar-nav me-4">
+              <li class="nav-item">
+                <a class="nav-link me-4 active" href="home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Vehicle Models</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Location</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link me-4" href="#">Contact</a>
+              </li>
+              <div class="login-home ">
+                <button type="button" class="btn btn-outline-secondary btn-sm">Login</button>
+                <button type="button" class="btn btn-outline-info btn-sm">Sign Up</button>
+              </div>
+            </ul>
+          </div>
+          
+        </div>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+    <!-- section Home -->
+    <section class="home" id="home">
+      <div class="container ">
+        <div class="row  mt-3">
+          <div class="col-lg-5 border">
+            <!-- form -->
+            <form class="form-control shadow">
+              <select class="form-select mt-3" aria-label="Default select example">
+                <option selected>Select Your Car Type</option>
+                <option value="1">Toyota Innova Reborn</option>
+                <option value="2">Toyota Avanza Veloz</option>
+                <option value="3">Toyota Alphard</option>
+                <option value="3">Mitsubishi Pajero Sport</option>
+                <option value="3">Toyota Hiace</option>
+              </select>
+
+              <div class="input-group mt-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-location-plus'></i> Pick-Up</span>
+                <input type="text" placeholder="Enter a City or Airport" class="form-control placeholder " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mt-3">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-calendar'></i>Pick-Up</span>
+                
+                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="input-group mt-3 ">
+                <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-calendar'></i>Drop-off</span>
+                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+              </div>
+              <div class="d-grid gap-2 col-12 mt-4 mb-3">
+                <button class="btn btn-success fw-bolder" type="button">CONTINUE CAR RESERVATION</button>
+              </div>
+            </form>
+            <!-- form -->
+          </div>
+          <div class="col-lg-7">
+            <!-- Carusell -->
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="gambar/jazz biru.png" style="height: 320px; " class="d-block w-100" alt="jazz.png">
+                </div>
+                <div class="carousel-item ">
+                  <img src="gambar/innova - Copy.png" style="height: 320px;" class="d-block w-100" alt="innova.png">
+                </div>
+                <div class="carousel-item ">
+                  <img src="gambar/hiace.png" style="height: 320px;"class="d-block w-100" alt="hiace.png">
+                </div>
+                
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+            <!-- Carusell -->
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- section Home -->
+    <!-- section services -->
+    <!-- section services -->
+
+    <!-- section car models -->
+    <div class="models" id="models">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="heading">Our Armada</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- section car models -->
+    <!-- js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
