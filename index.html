@@ -19,6 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@300;400&display=swap" rel="stylesheet" />
 
+    <!-- Animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- css -->
     <link rel="stylesheet" href="style.css" />
     <title>Eazy RentCar</title>
@@ -26,7 +34,7 @@
   <body>
     <!-- navbar starts -->
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top py-3 animate__animated animate__fadeInDown">
         <div class="container">
           <a class="navbar-brand" href="#"><span>E</span>azy RentCar</a>
           <button
@@ -70,8 +78,8 @@
     <!-- navbar ends -->
     <!-- section Home -->
     <section class="home" id="home">
-      <div class="container ">
-        <div class="row  mt-3">
+      <div class="container" style="height: 500px;" >
+        <div class="row  mt-5">
           <div class="col-lg-5 border">
             <!-- form -->
             <form class="form-control shadow">
@@ -80,8 +88,8 @@
                 <option value="1">Toyota Innova Reborn</option>
                 <option value="2">Toyota Avanza Veloz</option>
                 <option value="3">Toyota Alphard</option>
-                <option value="3">Toyota Vios</option>
-                <option value="3">Toyota Hiace</option>
+                <option value="4">Toyota Vios</option>
+                <option value="5">Toyota Hiace</option>
               </select>
 
               <div class="input-group mt-3">
@@ -144,15 +152,15 @@
       <div class="container mt-4 ">
         <div class="row text-center mb-3">
           <div class="col">
-            <h1 class="heading mt-4">All Vehicles for All Your Trips</h1>
-            <p class="subheading">With Eazy, whatever your needs, you can choose various variants ranging from SUV, MPV, City Car, which can be tailored to your needs.</p>
+            <h1 class="heading mt-4" data-aos="zoom-in" data-aos-duration="1000">All Vehicles for All Your Trips</h1>
+            <p class="subheading" data-aos="zoom-in" data-aos-duration="1300">With Eazy, whatever your needs, you can choose various variants ranging from SUV, MPV, City Car, which can be tailored to your needs.</p>
           </div>
         </div>
-        <div class="row border">
+        <div class="row border" data-aos="zoom-in" data-aos-duration="1000">
           <div class="col">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
-                <div class="card h-100">
+                <div class="card h-100" >
                   <div class="container d-inline-flex">
                     <img src="gambar/innova - Copy.png" style="height: 200px;" class="card-img-top" alt="...">
                   </div>
@@ -347,13 +355,13 @@
       <div class="container text-center">
         <div class="row">
           <div class="col">
-            <h1 class="heading mt-4">About us</h1>
-            <p class="subheading">Eazy RentCar is the official website of Eazy Transport. With this site, we hope to be able to help those who need car rental services in Semarang easily and safely. With permission from God Almighty and also support from family, friends and several parties involved. Until now we are still able to provide the best service to all consumers both from within the country and abroad.</p>        
+            <h1 class="heading mt-4"data-aos="zoom-in" data-aos-duration="1000">About us</h1>
+            <p class="subheading"data-aos="zoom-in" data-aos-duration="1000">Eazy RentCar is the official website of Eazy Transport. With this site, we hope to be able to help those who need car rental services in Semarang easily and safely. With permission from God Almighty and also support from family, friends and several parties involved. Until now we are still able to provide the best service to all consumers both from within the country and abroad.</p>        
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <h1 class="heading mt-4">Location</h1>
+            <h1 class="heading mt-4"data-aos="zoom-in" data-aos-duration="1000">Location</h1>
            <!--Google map-->
         <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.2117726308325!2d110.40710211427641!3d-6.984315970335542!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e708bbd7f1a5095%3A0xf65ef341c1525c5a!2sTugu%20Muda%20Semarang!5e0!3m2!1sid!2sid!4v1668585429615!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -372,5 +380,11 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
