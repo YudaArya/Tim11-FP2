@@ -45,3 +45,6 @@ input.placeholder {
 .form {
   font-family: var(--mainFont);
 }
+.card .img {
+  padding-bottom: 25px;
+}
