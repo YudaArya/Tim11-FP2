@@ -48,3 +48,32 @@ input.placeholder {
 .card .img {
   padding-bottom: 25px;
 }
+
+/* section d */
+.email-box .input-group .btn-news {
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.input-group .btn-news i {
+  color: white;
+  width: 19px;
+  height: 20px;
+}
+.email-box {
+  height: 383px;
+  border-radius: 40px;
+}
+.email-box .sub-heading span {
+  margin-top: 20px;
+}
+.email-box .input-group  input{
+  margin-top: 50px;
+  margin-bottom: 40px;
+}
+.text-uppercase {
+  font-weight: 700;
+}
+.list-unstyled .text-next { 
+  font-weight: 400; 
+  text-decoration: none;
+}
