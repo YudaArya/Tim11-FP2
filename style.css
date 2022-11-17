@@ -28,6 +28,7 @@ body {
 .nav-link {
   font-family: var(--headingFont);
 }
+
 .nav-link.active {
   font-weight: 700;
   color: var(--formtextColor) !important;
@@ -47,6 +48,10 @@ input.placeholder {
 }
 .card .img {
   padding-bottom: 25px;
+}
+h5 {
+  font-family: var(--mainFont);
+  font-weight: 700;
 }
 
 /* section d */
