@@ -1,4 +1,4 @@
-<!-- Testing -->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -80,7 +80,7 @@
     <section class="home" id="home">
       <div class="container" style="height: 500px;" >
         <div class="row  mt-5">
-          <div class="col-lg-5 border">
+          <div class="col-lg-5 " style="height: 500px;">
             <!-- form -->
             <form class="form-control shadow">
               <select class="form-select mt-3" aria-label="Default select example">
@@ -92,23 +92,25 @@
                 <option value="5">Toyota Hiace</option>
               </select>
 
-              <div class="input-group mt-3">
+              <div class="input-group mt-5">
                 <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-location-plus'></i> Pick-Up</span>
-                <input type="text" placeholder="Enter a City or Airport" class="form-control placeholder " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="text" placeholder="Enter a City or Airport" class="form-control placeholder " aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="Loct-Pick-up">
               </div>
               <div class="input-group mt-3">
                 <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-calendar'></i>Pick-Up</span>
                 
-                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="pick-up-date" >
+                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="pick-up-time">
               </div>
               <div class="input-group mt-3 ">
                 <span class="input-group-text" id="inputGroup-sizing-default"><i class='bx bxs-calendar'></i>Drop-off</span>
-                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
-                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">
+                <input type="date" class="form-control placeholder" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="drop-off-date">
+                <input type="time" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="drop-off-time">
               </div>
               <div class="d-grid gap-2 col-12 mt-4 mb-3">
-                <button class="btn btn-success fw-bolder" type="button">CONTINUE CAR RESERVATION</button>
+                <button type="button" class="btn btn-success fw-bolder" data-bs-toggle="modal" data-bs-target="#exampleModal" id="btn1">
+                 CONTINUE CAR RESERVATION
+                </button>
               </div>
             </form>
             <!-- form -->
@@ -252,7 +254,7 @@
             </div>
           </div>
         </div>
-        <div class="row border mt-5">
+        <div class="row border mt-5 " data-aos="zoom-in" data-aos-duration="1000">
           <div class="col">
             <div class="row row-cols-1 row-cols-md-3 g-4">
               <div class="col">
@@ -385,6 +387,77 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <!-- MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">RESERVATION</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <table class="table">
+              <thead class="text-center">
+                <th>Description</th>
+              </thead>
+              <tr>
+                <td>Type Car :</td>
+              </tr>
+              <tr>
+                <td>Location Pick-Up :</td>
+                <td class="output" id="out4"></td>
+              </tr>
+              <tr>
+                <td>Pick-Up Date:</td>
+                <td class="output" id="out1"></td>
+              </tr>
+              <tr>
+                <td>Pick-Up Time:</td>
+                <td class="output" id="out2"></td>
+              </tr>
+              <tr>
+                <td>Drop-Off Date:</td>
+                <td class="output" id="out3"></td>
+              </tr>
+              <tr>
+                <td>Drop-Off Time :</td>
+                <td class="output" id="out5"></td>
+              </tr>
+            </table>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success">SEND</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const Innova = document.g
+      const LoctPickup = document.getElementById('Loct-Pick-up');
+      const Pickupdate = document.getElementById('pick-up-date');
+      const Pickuptime = document.getElementById('pick-up-time');
+      const Dropoffdate = document.getElementById('drop-off-date');
+      const Dropofftime = document.getElementById('drop-off-time');
+      const btn1 = document.getElementById('btn1');
+      const output1 = document.getElementById('out1');
+      const output2 = document.getElementById('out2');
+      const output3 = document.getElementById('out3');
+      const output4 = document.getElementById('out4');
+
+
+      function submit(){
+            out1.innerHTML = Pickupdate.value;
+            out2.innerHTML = Pickuptime.value;
+            out3.innerHTML = Dropoffdate.value;
+            out4.innerHTML = LoctPickup.value;
+            out5.innerHTML = Dropofftime.value;
+            
+        }
+        btn1.addEventListener('click',submit);
+
     </script>
   </body>
 </html>
