@@ -10,7 +10,7 @@ body {
   font-family: var(--mainFont);
 }
 section {
-  scroll-margin-top: 50px;
+  scroll-margin-top: 75px;
 }
 .heading {
   font-family: var(--headingFont);
@@ -64,7 +64,7 @@ h5 {
   margin-top: 7rem;
   margin-bottom: 3rem;
 }
- .btn-rent {
+.btn-rent {
   align-items: center;
   border: 5px solid #23ad2e;
   border-radius: 30px;
