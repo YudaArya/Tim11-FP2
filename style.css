@@ -22,7 +22,7 @@ body {
   font-family: var(--headingFont);
   font-weight: 900;
 }
-.navbar-brand span {
+span {
   color: var(--formtextColor);
 }
 .nav-link {

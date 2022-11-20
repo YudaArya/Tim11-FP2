@@ -15,6 +15,10 @@ function OnFormSubmit() {
     resetForm();
   }
 }
+// validasi
+if (Loct - Pick - up == "" || pick - up - date == "" || pick - up - time == "" || drop - off - date == "" || drop - off - time == "") {
+  showAlert("Please fill in all fields", "danger");
+}
 
 function readFormData() {
   var formData = {};
