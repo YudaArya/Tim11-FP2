@@ -16,6 +16,7 @@ body {
 }
 .subheading {
   font-weight: 300;
+  font-family: var(--mainFont);
 }
 /* Navbar */
 .navbar-brand {
@@ -71,14 +72,14 @@ h5 {
 .email-box .sub-heading span {
   margin-top: 20px;
 }
-.email-box .input-group  input{
+.email-box .input-group input {
   margin-top: 50px;
   margin-bottom: 40px;
 }
 .text-uppercase {
   font-weight: 700;
 }
-.list-unstyled .text-next { 
-  font-weight: 400; 
+.list-unstyled .text-next {
+  font-weight: 400;
   text-decoration: none;
 }
