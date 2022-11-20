@@ -86,13 +86,13 @@
           <div class="col-lg-5 " style="height: 500px;">
             <!-- form -->
             <form class="form-control shadow">
-              <select class="form-select mt-3" aria-label="Default select example">
+              <select class="form-select mt-3" aria-label="Default select example" id="car">
                 <option selected>Select Your Car Type</option>
-                <option value="1">Toyota Innova Reborn</option>
-                <option value="2">Toyota Avanza Veloz</option>
-                <option value="3">Toyota Alphard</option>
-                <option value="4">Toyota Vios</option>
-                <option value="5">Toyota Hiace</option>
+                <option value="Innova">Toyota Innova Reborn</option>
+                <option value="Veloz">Toyota Avanza Veloz</option>
+                <option value="Alphard">Toyota Alphard</option>
+                <option value="Vios">Toyota Vios</option>
+                <option value="Hiace">Toyota Hiace</option>
               </select>
 
               <div class="input-group mt-5">
@@ -517,27 +517,27 @@
               </thead>
               <tr>
                 <td>Type Car :</td>
-                <td class="output" id="out6"></td>
+                <td class="output" id="mobil"></td>
               </tr>
               <tr>
-                <td>Location Pick-Up </td>
-                <td>: </td>
+                <td> <i class='bx bx-location-plus'>Location Pick-Up</i> </td>
+                <td></td>
                 <td class="output" id="out4"></td>
               </tr>
               <tr>
-                <td>Pick-Up Date:</td>
+                <td><i class='bx bxs-calendar'>Pick-Up Date: </i></td>
                 <td class="output" id="out1"></td>
               </tr>
               <tr>
-                <td>Pick-Up Time:</td>
+                <td><i class='bx bx-time'>Pick-Up Time:</i></td>
                 <td class="output" id="out2"></td>
               </tr>
               <tr>
-                <td>Drop-Off Date:</td>
+                <td><i class='bx bxs-calendar'>Drop-Off Date: </i></td>
                 <td class="output" id="out3"></td>
               </tr>
               <tr>
-                <td>Drop-Off Time :</td>
+                <td><i class='bx bx-time'>Drop-Off Time :</i></td>
                 <td class="output" id="out5"></td>
               </tr>
             </table>
@@ -550,7 +550,7 @@
       </div>
     </div>
     <script>
-      const Innova = document.g
+      const Mobil = document.querySelector('#car');
       const LoctPickup = document.getElementById('Loct-Pick-up');
       const Pickupdate = document.getElementById('pick-up-date');
       const Pickuptime = document.getElementById('pick-up-time');
@@ -569,6 +569,7 @@
             out3.innerHTML = Dropoffdate.value;
             out4.innerHTML = LoctPickup.value;
             out5.innerHTML = Dropofftime.value;
+            mobil.innerHTML = Mobil.value;
             
         }
         btn1.addEventListener('click',submit);
