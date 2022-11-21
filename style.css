@@ -13,7 +13,7 @@ section {
   scroll-margin-top: 75px;
 }
 input[type="text1"],
-input[type="password"] {
+.passlogin {
   width: 240px;
   height: 30px;
   outline: none;
