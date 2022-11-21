@@ -39,8 +39,3 @@ function onEdit(td) {
   document.getElementById("drop-off-date").value = selectedRow.cells[3].innerHTML;
   document.getElementById("drop-off-time").value = selectedRow.cells[3].innerHTML;
 }
-
-const btn = document.getElementById("btnlogin");
-btn.addEventListener("click", function () {
-  Swal.fire("opop Koee");
-});
