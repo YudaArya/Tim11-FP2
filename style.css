@@ -73,7 +73,34 @@ span {
 .nav-link {
   font-family: var(--headingFont);
 }
-
+.izi {
+  font-size: 23px;
+  color: transparent;
+  -webkit-text-stroke: 1px #020202;
+  background: url(/gambar/back.jpg);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
+  }
+}
+.collapse ul li a::after {
+  content: " ";
+  width: 0;
+  height: 3px;
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #088c18;
+  transition: width 0.3s;
+}
+.collapse ul li a:hover::after {
+  width: 50%;
+}
 .nav-link.active {
   font-weight: 700;
   color: var(--formtextColor) !important;
