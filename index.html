@@ -711,8 +711,8 @@
             </table>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-success">SEND</button>
+            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-success" id="btnsend">SEND</button>
           </div>
         </div>
       </div>
@@ -756,6 +756,7 @@
 })
       })
     </script>
+    <!-- script alert btnlogin -->
     <script>
       const btnlogin = document.getElementById('BTNLOGIN');
       btnlogin.addEventListener('click', function(){
@@ -763,6 +764,20 @@
           title:"Welcome",
           text:"Login Successfully",
           icon: "success"
+        })
+      })
+    </script>
+
+    <!-- script alert btn reserve -->
+    <script>
+      const btnbook = document.getElementById('btnsend');
+      btnbook.addEventListener('click', function(){
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          title: 'Your order has been sent !',
+          showConfirmButton: false,
+          timer: 1500
         })
       })
     </script>
