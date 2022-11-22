@@ -182,7 +182,7 @@
             <input type="password" class="passlogin" placeholder="Password" required/>
           </div>
           <div>
-            <button class="btn btn-success btnlgn" type ="submit" data-bs-dismiss="modal" >
+            <button class="btn btn-success btnlgn" type ="submit" data-bs-dismiss="modal" id="BTNLOGIN">
               <i class='bx bxs-lock' ></i> 
               Login
             </button>
@@ -385,7 +385,7 @@
                         <td>Yes</td>
                       </tr>
                     </table></p>
-                    <a href="#" class="btn btn-warning ">Rp. 550.000/24 hours</a>
+                    <a href="#" class="btn btn-warning ">Rp. 2.550.000/24 hours </a>
                   </div>
                 </div>
               </div>
@@ -741,9 +741,18 @@
             
         }
         btn1.addEventListener('click',submit);
+    </script>
 
-      
-
+    <!-- Script AOS  -->
+    <script>
+      const btnlogin = document.getElementById('BTNLOGIN');
+      btnlogin.addEventListener('click', function(){
+        Swal.fire({
+          title:"Welcome",
+          text:"Login Successfully",
+          icon: "success"
+        })
+      })
     </script>
   </body>
 </html>
