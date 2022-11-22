@@ -254,7 +254,7 @@
     <section class="product" id="services">
       <div class="container">
         <div class="row">
-          <h1 class="heading text-center" data-aos="zoom-in" data-aos-duration="1000">Service</h1>
+          <h1 class="heading text-center" data-aos="zoom-in" data-aos-duration="1000">Services</h1>
           <div class="col-md-6 col-12 mb-4">  
             <div class="box-product" data-aos="fade-right" data-aos-duration="1200">
               <div class="card card-product">
@@ -263,7 +263,7 @@
                     <div class="col-12">
                       <div class="product-content">Rent Car</div>
                       <img src="./gambar/car-rentals.jpg" alt="" width="350px" style="margin-bottom: 25px;"> <br>
-                      <span class="text-center">We serve all complaints about your car and are ready to help solve it</span> <br>
+                      <span class="text-center" style="color: black;">We serve all complaints about your car and are ready to help solve it</span> <br>
                       <a href="" class="btn btn-rent" id="btn-rent"
                 >Order Now </a >
                     </div>   
@@ -302,7 +302,7 @@
                     <div class="col-12">
                       <div class="product-content-consulting">Car Consulting</div>
                       <img src="./gambar/png-transparent-business-management-strategic-planning-logo-information-technology-consulting-online-business-flyer-text-service-logo.png" alt="" width="350px" style="margin-bottom: 15px;"> <br>
-                      <span class="text-center">We serve all complaints about your car</span> 
+                      <span class="text-center" style="color: black;">We serve all complaints about your car</span> 
                       <a href="" class="btn btn-rent" id="btn-rent"
                 >Order Now </a >
                     </div>   
@@ -744,6 +744,18 @@
     </script>
 
     <!-- Script AOS  -->
+    <script>
+      const buttonaddon2 = document.getElementById('button-addon2');
+      buttonaddon2.addEventListener('click', function(){
+        Swal.fire({
+  position: 'center',
+  icon: 'success',
+  title: 'Your email has been saved',
+  showConfirmButton: false,
+  timer: 1500
+})
+      })
+    </script>
     <script>
       const btnlogin = document.getElementById('BTNLOGIN');
       btnlogin.addEventListener('click', function(){
