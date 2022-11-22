@@ -5,6 +5,18 @@ window.addEventListener("scroll", () => {
   navBar.classList.toggle("scrolling-active", windowPosition);
 });
 
+const activepage = document.querySelectorAll(".nav-link");
+const sec = document.querySelectorAll("section");
+
+function activeMenu() {
+  let len = sec.length;
+  while (--len && window.scrollY + 97 < sec[len].offsetTop) {}
+  activepage.forEach((ltx) => ltx.classList.remove("active"));
+  activepage[len].classList.add("active");
+}
+activeMenu();
+window.addEventListener("scroll", activeMenu);
+
 var selectedRow = null;
 
 function OnFormSubmit() {
